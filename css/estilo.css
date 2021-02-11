@@ -1,0 +1,230 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Seletores de elementos/tag ~~ */
+ul, ol, dl { /* Devido a variações entre navegadores, é recomendado zerar o padding e a margem nas listas. É possível especificar as quantidades aqui ou nos itens da lista (LI, DT, DD) que eles contêm. Lembre-se: o que você fizer aqui ficará em cascata para a lista de navegação a não ser que você escreva outro seletor mais específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* ao remover a margem superior, as margens podem escapar das suas containing div. A margem inferior restante vai mantê-la afastada de qualquer elemento que se segue. */
+	padding-right: 15px;
+	padding-left: 15px; /* adicionando o padding para os lados dos elementos dentro dos divs, ao invés dos próprios divs o livra de qualquer combinação de modelo de caixa. Um div aninhado com padding lateral também pode ser usado como método alternativo. */
+}
+a img { /* esse seletor remove a borda azul padrão exibida em alguns navegadores ao redor de uma imagem circundada por um link. */
+	border: none;
+}
+/* ~~ A estilização dos links do seu site deve permanecer nesta ordem – incluindo o grupo de seletores que criam o efeito hover. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a não ser que você estilize seus links para que pareçam extremamente únicos, é melhor utilizar links sublinhados para uma identificação visual mais rápida. */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* esse grupo de seletores dará ao navegador que estiver usando um teclado a mesma experiência hover do que uma pessoa usando um mouse. */
+	text-decoration: none;
+}
+
+/* ~~ esse contêiner de largura fixa envolve os outros divs~~ */
+.container {
+	width: 100%;
+	background: #FFF;
+	margin: 0 auto; /* o valor automático nos lados, combinado com a largura, centraliza o layout */
+}
+#menu ul {
+			padding:0px;
+			margin:0px;
+			/* float: left; */
+			/* width: 100%; */
+			background-color:#EDEDED;
+			list-style:none;
+			font:20px Arial;
+		}
+ 
+		#menu ul li { display: inline; }
+ 
+		#menu ul li a {
+			background-color:#EDEDED;
+			color: #333;
+			text-decoration: none;
+			border-bottom:3px solid #EDEDED;
+			padding: 2px 10px;
+			float:left;
+		}
+ 
+		#menu ul li a:hover {
+			background-color:#D6D6D6;
+			color: #6D6D6D;
+			border-bottom:3px solid #EA0000;
+		}
+/* ~ cabeçalho do site~ */
+.header {
+	background: #ADB96E;
+}
+#logotipo{
+  height:50px;
+  margin-top:10px;
+  display:inline-block;
+}
+
+#menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/* ~~ Informações sobre o layout. ~~ 
+
+1) O padding é posto somente na parte superior e inferior do div. Os elementos nesse div têm padding nos seus lados impedindo o modelo tipo caixa. Lembre-se: ao adicionar qualquer padding lateral ou bordas no próprio div, ele será adicionado à largura que você define para criar a largura *total*. Também é necessário remover o padding no elemento do div e estabelecer um segundo div, sem largura e o padding necessário para o seu design.
+
+*/
+
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ O rodapé ~~ */
+.footer {
+	padding: 10px 0;
+	background: #CCC49F;
+}
+
+/* ~~ flutuações diversas/limpeza de classes ~~ */
+.fltrt {  /* essa classe pode ser usada para flutuar um elemento à direita da página. O elemento flutuado deve preceder o elemento e ser o próximo da página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* essa classe pode ser usada para flutuar um elemento à esquerda da página. O elemento flutuado deve preceder o elemento e ser o próximo da página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* essa classe pode ser colocada em um <br /> ou em um div vazio como o elemento final que segue o último div flutuado (no #contêiner) caso o rodapé seja removido ou retirado do contêiner. */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+/*CONTATO*/
+
+.form{
+	display: flex;
+	justify-content: center;
+}
+
+.contato{
+	width: 100%;
+	max-width: 500px;
+}
+
+.field{
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+}
+textarea .field{
+	height: 150px;
+}
+
+
+/*
+antigo contato , deixa aqui de backup
+
+#contato{
+	width:100%;
+	height:700px;
+	background: #000;
+}
+	#contato h1{
+		font-size: 30px;
+		color:#fff;
+		font-family: 'Respingo';
+	}
+
+	#text{
+		width:600px;
+		height:40px;
+		font-family:myfonte;
+		font-size:20px;
+		margin-top:10px;
+		border-radius: 5px;
+		background:#FDFDFD;
+		border:0;
+		outline:none;
+		text-align: center;
+		display:block;
+	}
+
+	#msg{
+		width:600px;
+		height:200px;
+		padding: 0;
+		font-family:myfonte;
+		font-size:20px;
+		margin-top:10px;
+		border-radius: 5px;
+		background:#FDFDFD;
+		border:0;
+		outline:none;
+		text-align: center;
+		display:block;
+	}
+
+	#contato form button{
+		width:100px;
+		height:30px;
+		margin-top:10px;
+		font-family:myfonte;
+		font-size:20px;
+		background:#FDFDFD;
+		border:0;
+		border-radius: 5px;
+		outline:none;
+		transition:background 0.5s;
+		-webkit-transition:background 0.5s;
+		-moz-transition:background 0.5s;
+	}
+
+	#contato form button:hover{
+		width:100px;
+		height:30px;
+		margin-top:10px;
+		font-size:20px;
+		background:#0000ff;
+		border:0;
+		border-radius: 5px;
+		outline:none;
+	}*/
+
+
+/*Rodape*/
+ #rodape{
+    width:100%;
+    background-color:#FFF;
+    color:#000;
+	position:static;
+	bottom:0;
+  }
+  #rodape h1{
+	color:#000;  
+    padding: 7px;
+  }
+  #rodape a{
+  color:#000;
+  text-decoration: none;	
+  transition: color 0.5s linear;
+  -webkit-transition: color 0.5s linear;
+  -moz-transition: color 0.5s linear;
+  }
+  #rodape a:hover{
+    color:#00f;
+	text-decoration: none;	
+  }
