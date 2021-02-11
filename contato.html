@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#1C1C1C">
 <!-- Site Metas -->
-<title>Matheus V Lobo</title>
+<title>CONTATO - Matheus V Lobo</title>
 <link href="css/estilo.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -32,20 +32,55 @@
     <h1>Contato</h1>
     
     <h2>Na página de contato com alerta de envio de email. </h2>
-    <!-- chama o javascript de aviso -->
-    <script type="text/javascript" src="js/personalizado.js"></script>
-    <!-- formulario de envio de email -->
 
-        <div class="contato">
-          <form class="form" method="POST" action="php/enviar.php" name="formcontato"> 
-            <input class="field" name="email" placeholder="E-mail">
-            <input class="field" name="name" placeholder="Nome">
-            <textarea class="field" name="message" placeholder="Digite seu comenterio."></textarea>
-            <input class="field" type="submit" name="ENVIAR" onclick="return validar_formcontato()">
-          </form>
-        </div>
+    <script language="JavaScript">
+    <!--
+    function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+</font>
+
+<form name="form" method="post" action="php/envia.php">
+  <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+Nome:
+    <input type="text" name="nome" size="34" style="border-style: solid; font-face: verdana;font-size: 12;color: black;background-color: white;border-color: #357CCA;border-width: 1px;">
+  
+
+
+E-mail:
+    <input type="text" name="email" size="34" style="border-style: solid; font-face: verdana;font-size: 12;color: black;background-color: white;border-color: #357CCA;border-width: 1px;">
+  
+
+
+Assunto:
+    <input type="text" name="assunto_msg" style="border-style: solid; font-face: verdana;font-size: 12;color: black;background-color: white;border-color: #357CCA;border-width: 1px;">
+  
+
+
+Mensagem:
+
+    <textarea name="contato" cols="34" rows="4" style="border-style: solid; font-face: verdana;font-size: 12;color: black;background-color: white;border-color: #357CCA;border-width: 1px;"></textarea>
+  
+
+        </font>
+  </div>
+  <div align="center">
+          <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+    <input class="form_botao" type="submit" name="Enviar" value="Enviar Mensagem" style="border-style: solid; font-face: verdana;font-size: 12;color: black;background-color: white;border-color: #357CCA;border-width: 1px;">
+          
+    <input class="form_botao" type="reset" name="Limpar" value="Limpar" style="border-style: solid; font-face: verdana;font-size: 12;color: black;background-color: white;border-color: #357CCA;border-width: 1px;">
+    </font></div>
     
-    <!-- Fim do COnteudo -->
+</form>
+
+<p>&nbsp;</p>
+    
+    <!-- Fim do COnteudo --></div>
 
   <div class="footer">
     <p>Todos os direitos reservado á Matheus Lobo | <a href="http://www.proflobo.com.br">www.proflobo.com.br</a></p>
