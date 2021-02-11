@@ -42,8 +42,8 @@ a:hover, a:active, a:focus { /* esse grupo de seletores dará ao navegador que e
 #menu ul {
 			padding:0px;
 			margin:0px;
-			float: left;
-			width: 100%;
+			/* float: left; */
+			/* width: 100%; */
 			background-color:#EDEDED;
 			list-style:none;
 			font:20px Arial;
@@ -73,6 +73,12 @@ a:hover, a:active, a:focus { /* esse grupo de seletores dará ao navegador que e
   height:50px;
   margin-top:10px;
   display:inline-block;
+}
+
+#menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 /* ~~ Informações sobre o layout. ~~ 
 
@@ -109,11 +115,24 @@ a:hover, a:active, a:focus { /* esse grupo de seletores dará ao navegador que e
 /*CONTATO*/
 
 .form{
-	display: flex;justify-content: center;}
+	display: flex;
+	justify-content: center;
 }
-.contato{width: 100%;max-width: 500px;}
-.field{padding: 10px;margin-bottom: 15px;border: 1px solid #DDD;border-radius: 5px;}
-textarea{height: 150px;}
+
+.contato{
+	width: 100%;
+	max-width: 500px;
+}
+
+.field{
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+}
+textarea .field{
+	height: 150px;
+}
 
 
 /*
