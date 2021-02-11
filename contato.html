@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#1C1C1C">
 <!-- Site Metas -->
 <title>CONTATO - Matheus V Lobo</title>
-<link href="css/estilo.css" rel="stylesheet" type="text/css">
+<link href="./css/estilo.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -43,32 +43,35 @@
 MM_reloadPage(true);
 // -->
 </script>
-</font>
+<!-- </font> -->
+
 
 <form name="form" method="post" action="php/envia.php">
-  <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
-Nome:
+    <div class="formface"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+  <div class="formbox">
+      Nome:
     <input type="text" name="nome" size="34" style="border-style: solid; font-face: verdana;font-size: 12;color: black;background-color: white;border-color: #357CCA;border-width: 1px;">
-  
+  </div>
 
-
+  <div class="formbox">
 E-mail:
     <input type="text" name="email" size="34" style="border-style: solid; font-face: verdana;font-size: 12;color: black;background-color: white;border-color: #357CCA;border-width: 1px;">
-  
+  </div>
 
-
+  <div class="formbox">
 Assunto:
     <input type="text" name="assunto_msg" style="border-style: solid; font-face: verdana;font-size: 12;color: black;background-color: white;border-color: #357CCA;border-width: 1px;">
-  
+  </div>
 
-
+  <div class="formbox">
 Mensagem:
 
     <textarea name="contato" cols="34" rows="4" style="border-style: solid; font-face: verdana;font-size: 12;color: black;background-color: white;border-color: #357CCA;border-width: 1px;"></textarea>
-  
+  </div>
 
         </font>
   </div>
+
   <div align="center">
           <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
     <input class="form_botao" type="submit" name="Enviar" value="Enviar Mensagem" style="border-style: solid; font-face: verdana;font-size: 12;color: black;background-color: white;border-color: #357CCA;border-width: 1px;">
