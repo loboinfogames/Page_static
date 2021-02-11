@@ -1,0 +1,34 @@
+ esse é o menu do jeito que eu montei, com as classes no logo e no UL.
+ Tambem separei o logo, tirando ele da lista.
+ <div class="header">
+    <div id="menu">
+      <a href="index.html"><img class="logo" src="imagens/logo.png" width="200" height="50"/></a>
+      <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  depois de fazer essa alteração no HTML, fiz o seguinte no CSS:
+  (isso foi criado do zero, pq não tinha o ID menu puro ainda)
+  #menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+No menu UL, eu comentei as linhas de float e width, pq elas estavam causando no design, ficou assim: 
+
+#menu ul {
+			padding:0px;
+			margin:0px;
+			/* float: left; */
+			/* width: 100%; */
+			background-color:#EDEDED;
+			list-style:none;
+			font:20px Arial;
+		}
+
