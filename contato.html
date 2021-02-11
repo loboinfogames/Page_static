@@ -33,13 +33,13 @@
     
     <h2>Na página de contato com alerta de envio de email. </h2>
     <!-- chama o javascript de aviso -->
-    <script type="text/javascript" src="js/aviso.js"></script>
+    <script type="text/javascript" src="js/personalizado.js"></script>
     <!-- formulario de envio de email -->
 
         <div class="contato">
           <form class="form" method="POST" action="php/enviar.php" name="formcontato"> 
-            <input class="field" name="name" placeholder="Nome">
             <input class="field" name="email" placeholder="E-mail">
+            <input class="field" name="name" placeholder="Nome">
             <textarea class="field" name="message" placeholder="Digite seu comenterio."></textarea>
             <input class="field" type="submit" name="ENVIAR" onclick="return validar_formcontato()">
           </form>

@@ -1,10 +1,11 @@
 @charset "utf-8";
 body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background: #42413C;
 	margin: 0;
 	padding: 0;
-	color: #000;
+	color: #555C68;
+    font-weight: 400;
 }
 
 /* ~~ Seletores de elementos/tag ~~ */
@@ -80,11 +81,6 @@ a:hover, a:active, a:focus { /* esse grupo de seletores dará ao navegador que e
 	align-items: center;
 	justify-content: space-between;
 }
-/* ~~ Informações sobre o layout. ~~ 
-
-1) O padding é posto somente na parte superior e inferior do div. Os elementos nesse div têm padding nos seus lados impedindo o modelo tipo caixa. Lembre-se: ao adicionar qualquer padding lateral ou bordas no próprio div, ele será adicionado à largura que você define para criar a largura *total*. Também é necessário remover o padding no elemento do div e estabelecer um segundo div, sem largura e o padding necessário para o seu design.
-
-*/
 
 .content {
 
