@@ -133,6 +133,19 @@ textarea .field{
 	height: 150px;
 }
 
+.formface{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.formbox input{
+	width: 100%;
+}
+.formbox textarea{
+	width: 100%;
+}
+
 
 
 
